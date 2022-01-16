@@ -1,8 +1,11 @@
 import React from "react";
+import List from '../components/List';
+import Add from '../components/Add';
 
 const Todo = () => {
     return (<div>
-        <p>Test</p>
+        <List />
+        <Add />
     </div>);
 }
 
