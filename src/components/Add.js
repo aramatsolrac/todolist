@@ -1,11 +1,13 @@
 import React from "react";
+import './Add.css';
 
 const Add = () => {
     return (
-        <div>
-            <input type="text" id="" name=""></input>
+        <form>
+            <label for="name">New task:</label>
+            <input id="input" type="text" id="name" name="name"></input>
             <button>Add</button>
-        </div>
+        </form>
     );
 }
 

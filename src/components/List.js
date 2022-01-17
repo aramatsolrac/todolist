@@ -1,10 +1,10 @@
 import React from "react";
+import './List.css';
 
 const List = () => {
     return (
-        <div>
-            <input type="checkbox" id="" name=""></input>
-            <label for="">Test</label>
+        <div class="List">
+            <il>Test</il>
         </div>);
 }
 
