@@ -1,7 +1,6 @@
-import "./App.css";
-import Todo from "./TodoList";
+import "./App.scss";
 import Header from "./components/Header";
-import TodoList from "./TodoList";
+import TodoList from "./components/TodoList";
 
 function App() {
   return (
