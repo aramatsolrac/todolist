@@ -1,6 +1,6 @@
 # Todo List App 
 
-It's a simple TodoList App using React.
+It's a simple Todo List App using React.js.
 
 ## Table of contents
 
