@@ -1,0 +1,21 @@
+.todo {
+  &__list {
+    padding: 0.5rem 0;
+  }
+  &__form {
+  }
+  &__input,
+  &__button {
+    outline: none;
+    font-family: "Nunito";
+    padding: 0.5rem;
+    border: 0.5px solid grey;
+    border-radius: 0.3rem;
+    margin: 0.2rem;
+  }
+  &__button {
+    &:hover {
+      background-color: whitesmoke;
+    }
+  }
+}

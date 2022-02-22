@@ -1,0 +1,33 @@
+.todo {
+  padding: 0;
+
+  &__items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    button {
+      background-color: inherit;
+      border: none;
+      color: gray;
+      &:hover {
+        color: red;
+      }
+    }
+  }
+  &__task {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    input[type="checkbox"]:checked + label {
+      text-decoration: line-through;
+      color: grey;
+      transform: all 0.2s ease-out;
+    }
+
+    &__input {
+      padding: 0;
+    }
+  }
+}
