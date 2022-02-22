@@ -1,9 +1,0 @@
-body {
-  padding: 50px;
-  background-color: white;
-  font-family: sans-serif;
-}
-#root {
-  display: flex;
-  justify-content: center;
-}
