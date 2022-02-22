@@ -19,7 +19,7 @@ Build a to-do list app using React.js, in which users can add and delete a task.
 
 ### Features
 
-- Add, check, delete tasks.
+- `Add`, `check`, and `delete` tasks.
 
 ### Technologies
 
@@ -33,8 +33,9 @@ Build a to-do list app using React.js, in which users can add and delete a task.
 
 ### Installing
 
-- Download the Repository
-- Open `index.html` on a web browser
+- Download this Repository or clone it: `git clone git@github.com:aramatsolrac/todolist.git`
+- `cd` into the new folder and type `npm install`
+- To run the React project type: `npm start`
 
 ### Live
 
