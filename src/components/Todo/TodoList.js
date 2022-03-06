@@ -12,6 +12,15 @@ class TodoList extends Component {
     this.addItem = this.addItem.bind(this);
     this.deleteItem = this.deleteItem.bind(this);
   }
+  componentDidMount() {
+    let items = localStorage.getItem("items");
+    if (items) {
+      this.setState({
+        items: JSON.parse(items),
+      });
+    }
+  }
+
   addItem(item) {
     if (this._inputElement.value !== "") {
       let newItem = {
@@ -19,11 +28,11 @@ class TodoList extends Component {
         key: Date.now(),
       };
 
-      this.setState((prevState) => {
-        return {
-          items: prevState.items.concat(newItem),
-        };
-      });
+      const items = [...this.state.items, newItem];
+
+      this.setState({ items });
+
+      localStorage.setItem("items", JSON.stringify(items));
 
       this._inputElement.value = "";
     }
@@ -41,8 +50,10 @@ class TodoList extends Component {
     this.setState({
       items: filteredItems,
     });
+    localStorage.setItem("items", JSON.stringify(filteredItems));
   }
   render() {
+    console.log(this.state);
     return (
       <div className="todo__list">
         <form className="todo__form" onSubmit={this.addItem}>
